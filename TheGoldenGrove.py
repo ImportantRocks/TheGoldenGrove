@@ -106,7 +106,7 @@ def fishing():
     if wormCount <= 0:
         print("You don't have any bait, but you can still go out on a hike if you would like?")
         print("1. Go on a hike")
-        print("E. Go back to your camp")
+        print("e. Go back to your camp")
         selection = input("Selection: ")
         if selection == "e":
             locationChoice = 0
@@ -200,7 +200,7 @@ def fishing():
             print("")
             sleep(3)
 
-            print("E: Take your fish back to camp")
+            print("e: Take your fish back to camp")
 
             selection = input("Selection: ")
             if selection == "e":
@@ -218,7 +218,7 @@ def fishing():
             print("")
             sleep(2)
 
-            print("E: Head back to camp empty handed.")
+            print("e: Head back to camp empty handed.")
 
             selection = input("Selection: ")
             if selection == "e":
@@ -262,7 +262,7 @@ def hike():
 def cave():
     print("You enter the small cave opening and find a circular room with a dirt floor. On the other side of the room there is a crack forming in the cave wall.")
     print("1. Collect worms from the cave floor")
-    print("E: Exit the cave")
+    print("e: Exit the cave")
 
     selection = input("Selection: ")
     if selection == "1":
@@ -278,7 +278,7 @@ def worms():
     global wormCount
     wormCount += newWorms
     print("1. Collect more worms")
-    print("E: Exit the cave")
+    print("e: Exit the cave")
 
     selection = input("Selection: ")
     if selection == "e":
@@ -295,7 +295,7 @@ def tackle():
     print('---------------------')
     print(f"Bait: {wormCount}")  
     print('---------------------')
-    print("E: Exit to camp")
+    print("e: Exit to camp")
 
     selection = input("Selection: ")
     if selection == "1":
@@ -311,7 +311,7 @@ def tent():
 
     print("1: Look at the journal")
     print("2. Go to sleep")
-    print("E: Exit the tent")
+    print("e: Exit the tent")
 
     selection = input("Selection: ")
     if selection == "1":
@@ -336,7 +336,7 @@ def journal():
     print('---------')
 
 
-    print("E: Exit journal")
+    print("e: Exit journal")
 
     selection = input("Selection: ")
     if selection == "e":
@@ -367,7 +367,7 @@ def slumber():
 os.system('cls')
 
 print("--- Fishing Adventure ---")
-print("E. Start New Game")
+print("e. Start New Game")
 print("1. Load Game")
 
 selection = input("Selection: ")
@@ -383,4 +383,5 @@ if selection == "e":
     start()
 if selection == "1":
     print('')
+
     loadGame()
