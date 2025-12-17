@@ -366,7 +366,7 @@ def slumber():
 #clear the command line
 os.system('cls')
 
-print("--- Fishing Adventure ---")
+print("--- The Golden Grove - Fishing Adventure ---")
 print("e. Start New Game")
 print("1. Load Game")
 
@@ -385,3 +385,4 @@ if selection == "1":
     print('')
 
     loadGame()
+
